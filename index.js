@@ -1,5 +1,5 @@
 const { Client, Collection } = require("discord.js");
-const token = process.env.arcadia
+const { token } = require("./botconfig.json");
 const bot = new Client();
 
 ["aliases", "commands"].forEach(x => bot[x] = new Collection());
